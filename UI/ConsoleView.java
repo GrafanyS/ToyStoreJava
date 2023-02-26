@@ -4,10 +4,10 @@ import java.util.List;
 import java.util.Scanner;
 
 import Configs.Config;
-import Core.MVP.View;
+import Core.MVP.IView;
 import Core.Models.Toy;
 
-public class ConsoleView implements View {
+public class ConsoleView implements IView {
     Scanner in;
 
     public ConsoleView() {
@@ -19,23 +19,13 @@ public class ConsoleView implements View {
         System.out.print("Идентификатор игрушки: ");
         return Integer.parseInt(in.nextLine());
     }
-/**
-    @Override
-    public void setToyId(int value) {
-        System.out.printf("Идентификатор игрушки: %s\n", value);
-    }
-*/
+
     @Override
     public String getToyNaming() {
         System.out.print("Название игрушки: ");
         return in.nextLine();
     }
-/**
-    @Override
-    public void setToyNaming(String value) {
-        System.out.printf("Название игрушки: %s\n", value);
-    }
-*/
+
     @Override
     public int getToyWeight() {
         System.out.print("Вес игрушки: ");

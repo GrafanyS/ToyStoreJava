@@ -6,6 +6,7 @@ import Core.Models.Toy;
 
 import java.util.Scanner;
 
+@SuppressWarnings("ALL")
 public class App {
     public static void buttonClick() {
         Presenter presenter = new Presenter(new ConsoleView(), Config.pathDb);

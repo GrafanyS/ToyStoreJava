@@ -1,5 +1,6 @@
 package Core.Models;
 
+@SuppressWarnings("ALL")
 public class Toy implements Comparable<Toy> {
     public int id;
     public String name;

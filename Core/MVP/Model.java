@@ -7,7 +7,7 @@ import java.io.*;
 import java.util.List;
 
 public class Model {
-    DrawingService currentDrawingService;
+    protected final DrawingService currentDrawingService;
     private final String path;
 
     public Model(String path) {

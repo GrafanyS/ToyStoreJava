@@ -3,7 +3,7 @@ package Core.MVP;
 import Core.Models.Toy;
 import java.util.List;
 
-public interface View {
+public interface IView {
     int getToyId();
     String getToyNaming();
     int getToyWeight();

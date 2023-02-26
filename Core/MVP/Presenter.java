@@ -9,9 +9,9 @@ import java.util.PriorityQueue;
 
 public class Presenter {
     private final Model model;
-    private final View view;
+    private final IView view;
 
-    public Presenter(View view, String pathDb) {
+    public Presenter(IView view, String pathDb) {
         this.view = view;
         model = new Model(pathDb);
     }

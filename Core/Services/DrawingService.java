@@ -21,24 +21,7 @@ public class DrawingService {
         return flag;
     }
 
-    /**
-    public boolean makeDrawing() {
-        return false;
-    }
 
-
-
-    public boolean update(int index, Toy toy) {
-        boolean flag = false;
-        if (indexContains(index) != -1) {
-            Toy updatedToy = toys.get(index);
-            updatedToy.setName(toy.getName());
-            updatedToy.setWeight(toy.getWeight());
-            flag = true;
-        }
-        return flag;
-    }
-    */
     public Toy getToy(int index) {
         return toys.get(index);
 
